@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="todo.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Edu+NSW+ACT+Foundation&family=Fasthand&display=swap" rel="stylesheet">
+    <title>TODO LIST</title>
+</head>
+<style>
+    .buttonlist{
+        color: white;
+        background-color: rgb(15, 9, 9);
+        border-radius: 50px;
+        border: none;
+    } 
+
+    button:hover{
+        position: relative;
+        top: -5px;
+    }
+    .list{
+        font-size: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+}
+
+
+    label{
+        font-size: 35px;
+        font-family: 'Fasthand', cursive;
+        margin-left: 40%;
+        text-decoration: underline;
+}
+    input{
+        width: 35vh;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    
+    
+    .todo{
+        border: 1px solid black;
+        width: 75vh;
+        min-height: 80vh;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 5px gray;
+        position: relative;
+        left: 33%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+    
+    
+</style>
+<body>
+<div class="todo">
+    <label>TODO LIST</label><br>
+    <input  id="change" type="text" />
+    <button class="buttonlist" type="button" onclick="Click()"><ion-icon name="add-outline"></ion-icon>ADD TO LIST</button>
+    <button class="buttonlist" type="button" onclick="Clear()"><ion-icon name="close-outline"></ion-icon>CLEAR LIST</button>
+
+    
+        <p id="list" class="list"><br></p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.0/esm/ionicons.min.js" integrity="sha512-2ySmquu6HK3CAvwLllh0R8K8buFPMZsUwWLZIlB7WW8c8ilUtoNyhsmEsQn2U0IV1USr2Oc/9DJzlr4cxAbuxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

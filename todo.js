@@ -1,4 +1,4 @@
-let arr = [];
+        let arr = [];
         function Click(){
         let a = document.getElementById('change').value;
         if(a!==''){
@@ -13,8 +13,4 @@ let arr = [];
             arr=[];
             document.getElementById('list').innerHTML =  arr.map(i =>  `i`);
         };
-        function Delete(arr){
-           var a = arr.filter((arr,inde)=>{inde !== inde})
-           console.log(a)
-            
-        }
+        
